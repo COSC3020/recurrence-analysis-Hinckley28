@@ -31,3 +31,6 @@ function mystery(n) {
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+Answer: The recurrence relation would be T(n) = 3T(n/3) + n^6. The time complexity would be $O$(n^6). The 3T(n/3) is derived from the 3 recursive calls where n is divided by 3. The n^6 is derived from the 3 nested loops which iterates through n^2, then n, and then n^2 again. The n^6 is the dominant term in the recurrence relation which gives us the $O$ bound of n^6. 
+        
