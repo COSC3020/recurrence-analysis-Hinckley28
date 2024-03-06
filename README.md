@@ -32,5 +32,7 @@ Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
 
-Answer: The recurrence relation would be T(n) = 3T(n/3) + n^5. The time complexity would be $O$(n^5). The 3T(n/3) is derived from the 3 recursive calls where n is divided by 3. The n^5 is derived from the 3 nested loops which iterates through n^2, then n, and then n^2 again. The n^5 is the dominant term in the recurrence relation which gives us the $O$ bound of n^5. 
+Answer: The recurrence relation would be T(n) = 3T(n/3) + n^5. The time complexity would be $O$(n^5). 
+1. The 3T(n/3) is derived from the 3 recursive calls where n is divided by 3 in each call.
+2. The n^5 is derived from the 3 nested loops which iterates through n^2, then n, and then n^2 again. The n^5 is the dominant term in the recurrence relation which gives us the $O$ bound of n^5. 
         
