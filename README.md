@@ -35,13 +35,13 @@ might help with the notation for mathematical expressions.
 Answer: The recurrence relation would be T(n) = 3T(n/3) + n^5. The time complexity would be $O$(n^5). 
 1. Base Case: 1 if n <= 1
 T(n) = 3T(n/3) + n^5 if n < 1
-= 3(3T(n^5/9) + n^5)
-= 9T(n^5/9) + 3n^5
-= 27T(n^5/27) + 9n^5
-= 3^i(T(n^5/3^i)) + (3^(i-1))(n^5)
+= 3(3T(n/9) + (n/3)^5)
+= 9T(n/9) + (n/3)^5
+= 27T(n/27) + (n/9)^5
+= 3^i(T(n/3^i)) + (n/3^(i-1))^5
 for i = log n
-= n^5T(1) + 3n^5 
-= n^5 + 3n^5 belongs to $O$(n^5) 
+= nT(1) + n^5 
+= n + n^5 belongs to $O$(n^5) 
 
 
         
